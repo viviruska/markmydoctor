@@ -21,7 +21,7 @@ class NewVisitorTest(unittest.TestCase):
         # She notices the page title and header mentions Mark my doctors
         self.assertIn('Mark my doctors', self.browser.title)
         header_text = self.browser.find_element_by_tag_name('h1')
-        self.assertIn('Mark my doctors', header_text)
+        self.assertIn('Mark my doctors', header_text.text)
 
         # She is invited to enter a doctor's name straight away
         inputbox = self.browser.find_element_by_id('id_new_item')
@@ -41,7 +41,8 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
-            any(row.text == '1: Ruska Pal' for row in rows)
+            any(row.text == '1: Ruska Pal' for row in rows),
+            "New doctor did not appear in table"
         )
 
         # There is still a text box inviting her to add another doctor. She
