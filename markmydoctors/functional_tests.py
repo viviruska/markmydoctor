@@ -27,7 +27,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertEqual(
             inputbox.get_attribute('placeholder'),
-            "Not the doctor you're looking for? Add him/her here"
+            "Ha nem találod az orvosod, akit keresel, akkor regisztráld be TE!"
         )
 
         # She types "Ruska Pal" into a text box
