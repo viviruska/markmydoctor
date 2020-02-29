@@ -40,18 +40,23 @@ class NewVisitorTest(unittest.TestCase):
 
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
-        self.assertTrue(
-            any(row.text == '1: Ruska Pal' for row in rows),
-            "New doctor did not appear in table"
-        )
+        self.assertIn('1: Ruska Pal', [row.text for row in rows])
 
         # There is still a text box inviting her to add another doctor. She
         # enters "Irisz Szabo"
-        self.fail("Finish the test!")
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox.send_keys('Irisz Szabo')
+        inputbox.send_keys(Keys.ENTER)
+        time.sleep(1)
 
         # The page updates again, and now shows both doctors on her list
+        table = self.browser.find_element_by_id('id_list_table')
+        rows = table.find_elements_by_tag_name('tr')
+        self.assertIn('1: Ruska Pal', [row.text for row in rows])
+        self.assertIn('2: Irisz Szabo', [row.text for row in rows])
 
         # Mici wonders whether the site will remember her list
+        self.fail("Finish the test!")
 
         # She visits the URL, her rating list is still there.
 
