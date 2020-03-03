@@ -9,9 +9,29 @@ class HomePageTest(TestCase):
         self.assertTemplateUsed(response, 'home.html')
 
     def test_can_save_a_POST_request(self):
-        response = self.client.post('/', data={'item_text': 'A new list item'})
-        self.assertIn('A new list item', response.content.decode())
-        self.assertTemplateUsed(response, 'home.html')
+        self.client.post('/', data={'doctor_name': 'A new doctor'})
+
+        self.assertEqual(Doctor.objects.count(), 1)
+        new_doctor = Doctor.objects.first()
+        self.assertEqual(new_doctor.name, 'A new doctor')
+
+    def test_redirects_after_POST(self):
+        response = self.client.post('/', data={'doctor_name': 'A new doctor'})
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response['location'], '/')
+
+    def test_only_saves_doctors_when_necessary(self):
+        self.client.get('/')
+        self.assertEqual(Doctor.objects.count(), 0)
+
+    def test_displays_all_doctors(self):
+        Doctor.objects.create(name='Timi')
+        Doctor.objects.create(name='Roli')
+
+        response = self.client.get('/')
+
+        self.assertIn('Timi', response.content.decode())
+        self.assertIn('Roli', response.content.decode())
 
 
 class DoctorModelTest(TestCase):
