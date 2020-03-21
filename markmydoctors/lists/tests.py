@@ -8,30 +8,37 @@ class HomePageTest(TestCase):
         response = self.client.get('/')
         self.assertTemplateUsed(response, 'home.html')
 
+
+class DoctorsListViewTest(TestCase):
+
+    def test_uses_doctors_list_template(self):
+        response = self.client.get('/doctors/the-only-list-in-the-world/')
+        self.assertTemplateUsed(response, 'doctors_list.html')
+
+    def test_displays_all_doctors(self):
+        Doctor.objects.create(name='Timi')
+        Doctor.objects.create(name='Roli')
+
+        response = self.client.get('/doctors/the-only-list-in-the-world/')
+
+        self.assertContains(response, 'Timi')
+        self.assertContains(response, 'Roli')
+
     def test_can_save_a_POST_request(self):
-        self.client.post('/', data={'doctor_name': 'A new doctor'})
+        self.client.post('/doctors/the-only-list-in-the-world/', data={'doctor_name': 'A new doctor'})
 
         self.assertEqual(Doctor.objects.count(), 1)
         new_doctor = Doctor.objects.first()
         self.assertEqual(new_doctor.name, 'A new doctor')
 
     def test_redirects_after_POST(self):
-        response = self.client.post('/', data={'doctor_name': 'A new doctor'})
+        response = self.client.post('/doctors/the-only-list-in-the-world/', data={'doctor_name': 'A new doctor'})
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(response['location'], '/')
+        self.assertEqual(response['location'], '/doctors/the-only-list-in-the-world/')
 
     def test_only_saves_doctors_when_necessary(self):
-        self.client.get('/')
+        self.client.get('/doctors/the-only-list-in-the-world/')
         self.assertEqual(Doctor.objects.count(), 0)
-
-    def test_displays_all_doctors(self):
-        Doctor.objects.create(name='Timi')
-        Doctor.objects.create(name='Roli')
-
-        response = self.client.get('/')
-
-        self.assertIn('Timi', response.content.decode())
-        self.assertIn('Roli', response.content.decode())
 
 
 class DoctorModelTest(TestCase):

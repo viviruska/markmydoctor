@@ -5,16 +5,5 @@
     </head>
     <body>
         <h1>Mark my doctors</h1>
-        <form action="" method="post">
-            <input name="doctor_name" type="text" id="id_new_item"
-                   placeholder="Ha nem találod az orvosod, akit keresel, akkor regisztráld be TE!">
-            {% csrf_token %}
-        </form>
-
-        <table id="id_list_table">
-            {% for doctor in doctors %}
-                <tr><td>{{ forloop.counter }}: {{ doctor.name }}</td></tr>
-            {% endfor %}
-        </table>
     </body>
 </html>
