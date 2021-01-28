@@ -1,3 +1,2 @@
-# markmydoctors
-
-Author: viva.ruska@gmail.com
+# markmydoctor
+Hashnode Hackathon 2021 🏆
