@@ -1,23 +1,20 @@
 import logo from './logo.svg';
+import markmydoctor from './markmydoctor.svg'
 import './App.css';
+import UserStory from './UserStory';
+import HomePage from './Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <header className="">
+        <img src={markmydoctor} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Find the best doctor
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <UserStory/>
+      <HomePage/>
     </div>
   );
 }
