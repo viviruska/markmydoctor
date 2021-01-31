@@ -1,22 +1,38 @@
-import logo from './logo.svg';
-import markmydoctor from './markmydoctor.svg'
 import './App.css';
-import UserStory from './UserStory';
-import HomePage from './Homepage';
+// import UserStory from './UserStory';
+// import ScreenOne from './ScreenOne'
+// import Footer from './Footer'
+import MedicalSpecialtyPage from './components/MedicalSpecialtyPage/MedicalSpecialtyPage';
+import HomePage from './HomePage'
+import { Component } from 'react';
+import { Route } from 'react-router-dom';
 
-function App() {
+class App extends Component {
+  state = {
+    selectedSpecialty: 'dentist'
+  }
+
+  render () {
   return (
     <div>
-      <header className="">
-        <img src={markmydoctor} className="App-logo" alt="logo" />
-        <p>
-          Find the best doctor
-        </p>
-      </header>
+      {/* <ScreenOne/>
       <UserStory/>
-      <HomePage/>
+      <Footer>
+        <p className="App-footer-TOF">Terms of Use  |  Privacy Policy</p>
+        <p className="App-footer-license">© Vivien Faragone Ruska  2021</p>
+      </Footer> */}
+      <Route exact path="/" render={({ history }) => (
+        <HomePage/>
+      )}/>
+      <Route path="/specialties/:name" render={({ history }) => (
+          <MedicalSpecialtyPage
+            // specialty={this.state.selectedSpecialty}
+
+            // onChangeShelf={(book, shelf) => {this.changeShelf(book, shelf)}}
+          />
+        )}/>
     </div>
   );
-}
+}}
 
 export default App;

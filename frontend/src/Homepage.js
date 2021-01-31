@@ -1,12 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import UserStory from './UserStory';
+import ScreenOne from './ScreenOne'
+import Footer from './Footer'
 
-
-class HomaPage extends Component {
-  render() {
+class HomePage extends Component {
+  render () {
     return (
-      <p>Hello Mici</p>
+      <div>
+        <ScreenOne/>
+        <UserStory/>
+        <Footer>
+          <p className="App-footer-TOF">Terms of Use  |  Privacy Policy</p>
+          <p className="App-footer-license">© Vivien Faragone Ruska  2021</p>
+        </Footer>
+      </div>
     )
   }
 }
 
-export default HomaPage
+export default HomePage
