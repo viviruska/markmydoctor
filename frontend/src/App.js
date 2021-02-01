@@ -26,7 +26,7 @@ class App extends Component {
       )}/>
       <Route path="/specialties/:name" render={({ history }) => (
           <MedicalSpecialtyPage
-            // specialty={this.state.selectedSpecialty}
+            specialty={this.state.selectedSpecialty}
 
             // onChangeShelf={(book, shelf) => {this.changeShelf(book, shelf)}}
           />
