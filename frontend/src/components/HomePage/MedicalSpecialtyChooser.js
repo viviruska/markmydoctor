@@ -20,8 +20,8 @@ class MedicalSpecialtyChooser extends Component {
     const specialties = Const.specialties;
 
     return (
-        <div className="book-shelf-changer">
-        <p>I am looking for a(n) ...</p>
+      <div className="LookingForADoctorIcon">
+        <p className='medical-specialty-chooser-text'>I am looking for a(n) </p>
         <select onChange={(e) => this.handleChange(e)}>
           {/* For the option you want to be the default, React uses a value attribute on the root select tag */}
           <option value="select" disabled>I'm looking for a ...</option>

@@ -16,7 +16,7 @@ const footerStyle = {
 
 const phantomStyle = {
   display: "block",
-  padding: "20px",
+  padding: "0px",
   height: "60px",
   width: "100%"
 };

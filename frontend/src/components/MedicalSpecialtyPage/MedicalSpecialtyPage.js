@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// import ScreenOne from '../../ScreenOne'
-
+import { Link } from 'react-router-dom'
 
 class MedicalSpecialtyPage extends Component {
   // TODO: state coming from API
@@ -41,7 +40,6 @@ class MedicalSpecialtyPage extends Component {
 
     return (
       <div className='list-doctors'>
-        {/* <ScreenOne/> */}
         <h1>{spec}</h1>
         <div className='doctor-list'>
           <div>Column 1</div>
@@ -54,7 +52,11 @@ class MedicalSpecialtyPage extends Component {
             <div className='doctor-avatar' style={{backgroundImage: `url(${doctor.avatarURL})`}}>
             </div>
             <div className='doctor-details'>
-              <p>{doctor.firstName}</p>
+              <Link 
+                className='' 
+                to='/specialties/dentist/1'
+              >
+                <p>{doctor.firstName}</p></Link>
               <p>{doctor.city}</p>
             </div>
             <div className='doctor-average-rating'>

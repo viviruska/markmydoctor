@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import LookingForADoctorStory from './components/HomePage/LookingForADoctorStory'
 import LeaveYourReviewStory from './components/HomePage/LeaveYourReviewStory'
-import InPain from './InPain'
+import GirlInPainStory from './components/HomePage/GirlInPainStory'
+import ReadOurReviewsStory from './components/HomePage/ReadOurReviewsStory';
 
 
 class UserStory extends Component {
@@ -19,13 +20,16 @@ class UserStory extends Component {
       const { pageYOffset } = window;
       const { active } = this.state;
   
-      if (pageYOffset >= 1500) {
+      if (1900 < pageYOffset) {
         this.setState({ active: 2 });
-      } else if (500 <= pageYOffset) {
+      } else if (1000 < pageYOffset) {
+        this.setState({active: 3})
+      } else if (500 < pageYOffset) {
         this.setState({ active: 1 });
-      } else if (pageYOffset < 500) {
+      } else if (pageYOffset <= 500) {
         this.setState({ active: 0 });
       }
+      console.log(this.state.active)
     };
 
     showDiv = (active) => {
@@ -33,12 +37,11 @@ class UserStory extends Component {
         case 0:
           return <LookingForADoctorStory/>
         case 1:
-          return <div style={{
-            height: "100%",
-            width: "100%",
-            backgroundColor: "blue"}}></div>
+          return <GirlInPainStory/>
         case 2:
           return <LeaveYourReviewStory/>
+        case 3:
+          return <ReadOurReviewsStory/>        
         default:
           break;
       }
