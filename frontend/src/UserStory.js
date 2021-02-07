@@ -18,7 +18,6 @@ class UserStory extends Component {
   
     handleScroll = event => {
       const { pageYOffset } = window;
-      const { active } = this.state;
   
       if (1900 < pageYOffset) {
         this.setState({ active: 2 });
@@ -48,7 +47,6 @@ class UserStory extends Component {
     }
   
     render() {
-      const { active } = this.state;
       return (
         <div className="UserStoryContainer">
           {this.showDiv(this.state.active)}

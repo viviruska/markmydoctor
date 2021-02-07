@@ -17,7 +17,7 @@ class ReadOurReviewsStory extends Component {
               </strong>
             </h3>
           </div>
-          <div className="LookingForADoctorIcon">
+          <div className="looking-for-a-doctor-icon">
             <img style={{width: 170, paddingTop: "50px"}} src={scrollIcon}/>
           </div>
         </div>

@@ -9,7 +9,7 @@ class GirlInPainStory extends Component {
       <div className="in-pain-container">
         <div>
           <div>
-            <img className='girl-image' src={girl}/>
+            <img className='girl-image' src={girl} alt="Girl in pain"/>
           </div>
           <div className='padded-multiline'>
             <h3>
@@ -19,8 +19,8 @@ class GirlInPainStory extends Component {
               </strong>
             </h3>
           </div>
-          <div className="LookingForADoctorIcon">
-            <img style={{width: 170}} src={scrollIcon}/>
+          <div className="looking-for-a-doctor-icon">
+            <img style={{width: 170}} src={scrollIcon} alt="Scroll icon"/>
           </div>
         </div>
       </div> 

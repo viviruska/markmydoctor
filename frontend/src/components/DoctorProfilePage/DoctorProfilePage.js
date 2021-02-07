@@ -14,7 +14,13 @@ class DoctorProfilePage extends Component {
           backgroundColor: "#a0ced9"
         }}>
           <div>
-            <img style={{width: "320px", height: "320px", borderRadius: "160px", marginRight: "-200px"}} src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"/>
+            <img style={{
+              width: "320px", 
+              height: "320px", 
+              borderRadius: "160px", 
+              marginRight: "-200px"}} 
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
+              alt="Doctor profile picture"/>
           </div>
           <div>
             <h4 style={{marginRight: "300px", fontFamily: "Neue Helvetica", fontSize: "30px"}}>

@@ -59,13 +59,13 @@ phantom {
 
 .AboutUsButton {
   margin-left: 600px;
-  margin-top: -150px;
+  margin-top: -50px;
   border: none;
   border-radius: 32px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 20px;
-  width: 150 px;
+  width: 130px;
   background-color: #ffee93;
 }
 
@@ -74,7 +74,7 @@ phantom {
   width: 100%;
 }
 
-.LookingForADoctorContainer {
+.looking-for-a-doctor-container {
   background-color: #ffc09f;
   display: flex;
   height: 120vh;
@@ -82,7 +82,7 @@ phantom {
   justify-content: center;
 }
 
-.LookingForADoctorText {
+.looking-for-a-doctor-text-1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   font-size: xx-large;
@@ -90,7 +90,7 @@ phantom {
   justify-content: center;
 }
 
-.LookingForADoctorText2 {
+.looking-for-a-doctor-text-2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   display: flex;
@@ -99,16 +99,30 @@ phantom {
   justify-content: center;
 }
 
-.LookingForADoctorIcon {
+.looking-for-a-doctor-image {
+  padding-left: 60px;
+}
+
+.looking-for-a-doctor-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 60%; */
+}
+
+.chooser {
+  border: none;
+  border-radius: 32px;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 3px;
+  width: 330px;
+  background-color: #ffee93;
+  margin-left: 800px;
 }
 
 .in-pain-container {
   display: flex;
-  background-color: blueviolet;
+  background-color: #b892ff;
   height: 100%;
   justify-content: center;
 }
@@ -277,7 +291,6 @@ phantom {
   cursor: pointer;
   outline: none;
 }
-
 
 .body {
   font-family: 'PT Sans', sans-serif;

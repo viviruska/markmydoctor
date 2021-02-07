@@ -38,7 +38,7 @@ class ReviewTable extends Component {
           {commentNodes}
         </div>  
       );
-    } // end render
+    }
     
     _addComment(author, body) {
       const comment = {
@@ -75,7 +75,7 @@ class ReviewTable extends Component {
         return `${commentCount} comments`;
       }
     }
-  } // end CommentBox component
+  }
   
   class CommentForm extends React.Component {
     render() {
@@ -90,15 +90,15 @@ class ReviewTable extends Component {
           </div>
         </form>
       );
-    } // end render
+    }
     
     _handleSubmit(event) { 
-      event.preventDefault();   // prevents page from reloading on submit
+      event.preventDefault();
       let author = this._author;
       let body = this._body;
       this.props.addComment(author.value, body.value);
     }
-  } // end CommentForm component
+  }
   
   class Comment extends React.Component {
     render () {
@@ -107,7 +107,7 @@ class ReviewTable extends Component {
           <p className="comment-header">{this.props.author}</p>
           <p className="comment-body">- {this.props.body}</p>
           <div className="comment-footer">
-            <a href="#" className="comment-footer-delete" onClick={this._deleteComment}>Delete Comment</a>
+            <button className="comment-footer-delete" onClick={this._deleteComment}>Delete Comment</button>
           </div>
         </div>
       );

@@ -1,6 +1,7 @@
 import React from 'react';
 import WavyHeader from './/WavyHeader';
 import markmydoctor from './markmydoctor.svg'
+import MedicalSpecialtyChooser from './components/MainPage/MedicalSpecialtyChooser'
 
 
 export default function ScreenOne() {
@@ -45,12 +46,12 @@ export default function ScreenOne() {
     <div style={styles.container}>
       <WavyHeader customStyles={styles.svgCurve} />
       <header style={styles.headerContainer}>
-        {/* <p style={styles.headerText}>Custom Header</p> */}
         <div>
           <div></div>
           <div>
             <button className="AboutUsButton">  About Us  </button>
           </div>
+          <div className="chooser" style={{marginTop: "-60px"}}><MedicalSpecialtyChooser/></div>
         </div>
         <div>
           <img src={markmydoctor} style={styles.headerText} alt="logo" />

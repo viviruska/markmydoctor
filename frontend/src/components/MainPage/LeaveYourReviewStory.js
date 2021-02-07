@@ -17,7 +17,7 @@ class LeaveYourReviewStory extends Component {
             </h3>
           </div>
           <div>
-            <img src={loveHealthcare}/>
+            <img src={loveHealthcare} alt="Healthcare love"/>
           </div>
           <MedicalSpecialtyChooser/>
         </div>
