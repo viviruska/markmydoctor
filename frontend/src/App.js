@@ -1,6 +1,6 @@
 import './App.css';
 import MedicalSpecialtyPage from './components/MedicalSpecialtyPage/MedicalSpecialtyPage';
-import HomePage from './HomePage'
+import HomePage from './components/MainPage/HomePage'
 import { Component } from 'react';
 import { Route } from 'react-router-dom';
 import DoctorProfilePage from './components/DoctorProfilePage/DoctorProfilePage'

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import UserStory from './UserStory';
-import ScreenOne from './ScreenOne'
-import Footer from './Footer'
+import UserStory from '../../UserStory';
+import ScreenOne from '../../ScreenOne'
+import Footer from '../../Footer'
 
 class HomePage extends Component {
   render () {
