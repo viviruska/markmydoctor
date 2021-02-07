@@ -27,10 +27,28 @@ class DoctorProfilePage extends Component {
               Brigitta Pallagi
               <div style={{display: "flex", justifyContent:"space-between", width:"108%"}}>
                 <h6>Budapest</h6>
-                <h6>4 ratings</h6>
-                <h6>40 posts</h6>
+                <h6>Smile Dental</h6>
+                <h6>wwww.smiledental.com</h6>
               </div>
             </h4>
+            <h5>Skills
+              <div style={{display: "flex", justifyContent:"space-between", width:"40%"}}>
+                <p>Problem solving</p>
+                <p>5</p>
+              </div>
+              <div style={{display: "flex", justifyContent:"space-between", width:"40%"}}>
+                <p>Accuracy / Correctness</p>
+                <p>4.4</p>
+              </div>
+              <div style={{display: "flex", justifyContent:"space-between", width:"40%"}}>
+                <p>Informativeness</p>
+                <p>4.8</p>
+              </div>
+              <div style={{display: "flex", justifyContent:"space-between", width:"40%"}}>
+                <p>Social skills</p>
+                <p>4.6</p>
+              </div>
+            </h5>
             <button className="book-appointment-button">Book appointment</button>
           </div>
         </div>

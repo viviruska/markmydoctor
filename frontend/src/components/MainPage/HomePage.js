@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import UserStory from '../../UserStory';
-import ScreenOne from '../../ScreenOne'
-import Footer from '../../Footer'
+import UserStory from './UserStory';
+import Header from './Header'
+import Footer from './Footer'
 
 class HomePage extends Component {
   render () {
     return (
       <div>
-        <ScreenOne/>
+        <Header/>
         <UserStory/>
         <Footer>
           <p className="App-footer-TOF">Terms of Use  |  Privacy Policy</p>

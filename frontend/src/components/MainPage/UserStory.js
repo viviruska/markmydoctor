@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import LookingForADoctorStory from './components/MainPage/LookingForADoctorStory'
-import LeaveYourReviewStory from './components/MainPage/LeaveYourReviewStory'
-import GirlInPainStory from './components/MainPage/GirlInPainStory'
-import ReadOurReviewsStory from './components/MainPage/ReadOurReviewsStory';
+import LookingForADoctorStory from './LookingForADoctorStory'
+import LeaveYourReviewStory from './LeaveYourReviewStory'
+import GirlInPainStory from './GirlInPainStory'
+import ReadOurReviewsStory from './ReadOurReviewsStory';
 
 
 class UserStory extends Component {
