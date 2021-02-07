@@ -12,7 +12,7 @@ class MedicalSpecialtyPage extends Component {
         "averageRating": 4.59,
         "specialty": "dentist",
         "city": "Kotaj",
-        "avatarURL": ""
+        "avatarURL": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
       },
       {
         "id": 2, 
@@ -21,7 +21,7 @@ class MedicalSpecialtyPage extends Component {
         "averageRating": 4.72,
         "specialty": "dentist",
         "city": "Budapest",
-        "avatarURL": ""
+        "avatarURL": "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBlcnNvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
       },
       {
         "id": 3, 
@@ -30,7 +30,7 @@ class MedicalSpecialtyPage extends Component {
         "averageRating": 4.7,
         "specialty": "dentist",
         "city": "Nyíregyháza",
-        "avatarURL": ""
+        "avatarURL": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
       },
       {
         "id": 4, 
@@ -39,7 +39,7 @@ class MedicalSpecialtyPage extends Component {
         "averageRating": 4.2,
         "specialty": "dentist",
         "city": "Szombathely",
-        "avatarURL": ""
+        "avatarURL": "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
       }
     ],
   }

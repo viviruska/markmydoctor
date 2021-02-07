@@ -15,7 +15,7 @@ class GirlInPainStory extends Component {
             <h3>
               <strong>
                 Sarah suffers from toothache. 
-                After moving to Budapest, her hometown dentist is not an option for her any more in cases like this.
+                After moving to Budapest, her hometown dentist is not an option any more in cases like this.
               </strong>
             </h3>
           </div>

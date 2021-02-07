@@ -8,7 +8,7 @@ class ReviewTable extends Component {
         showComments: true,
         comments: [
           {id: 1, author: "kotaji", body: "She is the best dentist ever!"},
-          {id: 2, author: "mici", body: "I felt no pain during the treatment - thanks a lot, Brigi!"},
+          {id: 2, author: "mici", body: "I was always of going to the dentist, but now I felt no pain during the treatment - thanks a lot, Brigi!"},
           {id: 3, author: "iris", body: "I'll come back to her when it comes to tooth"}
         ]
       };

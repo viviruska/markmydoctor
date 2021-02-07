@@ -12,8 +12,8 @@ class ReadOurReviewsStory extends Component {
           <div className='padded-multiline'>
             <h3>
               <strong>
-                She hears about markmydoctor.com, where based on others' review, she can find 
-                the most appropriate doctor for herself. 
+                She hears about markmydoctor.com, where she can find 
+                a doctor she likes based on other users' reviews. 
               </strong>
             </h3>
           </div>
