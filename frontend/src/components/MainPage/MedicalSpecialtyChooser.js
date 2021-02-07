@@ -29,9 +29,9 @@ class MedicalSpecialtyChooser extends Component {
             <option value={specialty.name} key={specialty.name}>{specialty.title}</option>
           ))}
         </select>
-        {/* <Link
+        <Link
             to="/specialties/internist"><button>Test</button>
-        </Link> */}
+        </Link>
       </div>
     )
   }
