@@ -203,7 +203,7 @@ phantom {
 .list-doctors {
   padding-top: 60px;
   background: #ffc09f;
-  height: 800px; /* 100% */
+  height: 900px; /* 100% */
 }
 
 .doctor-list {
@@ -217,6 +217,7 @@ phantom {
   padding: 20px;
   background: white;
   display: flex;
+  background-color: #a0ced9;
 }
 
 @media (min-width: 600px) {
@@ -275,4 +276,98 @@ phantom {
   vertical-align: middle;
   cursor: pointer;
   outline: none;
+}
+
+
+.body {
+  font-family: 'PT Sans', sans-serif;
+  padding: 2rem;
+}
+.button {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.75em;
+  display: inline-block;
+  text-decoration: none;}
+  
+  .button .hover {
+    cursor: pointer;
+  }
+  .button .focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+.comment-box {
+  max-width: 37.5rem;
+  color: #fff;
+  background-color: #61a5c2;
+  border-radius: 0.875rem;
+  padding: 0.2rem 1rem 2rem;
+}
+.comment-form {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  padding: 1rem;  
+}
+.comment-form-fields {
+  margin-bottom: 0.25rem;}
+  .comment-form-fields input, textarea {
+    border: none;
+    border-bottom: 1px solid #404040;
+    font-size: 0.85rem;
+    padding: 0.25rem 0;
+    width: 99%;}
+    
+    .comment-form-fields .focus {
+      border-bottom-color: #00BDFC;
+      outline: none;
+    }
+
+    .comment-form-fields .textarea {
+    font-style: italic;
+  }
+
+.comment-form-actions {
+  
+}
+.comment-count {
+  color: #404040;
+}
+#comment-reveal {
+  float: right;
+  background-color: #00BDFC;
+  color: #fff;
+}
+.comment {
+  border-top: 0.125rem solid #404040;
+}
+.comment-body {
+  font-style: italic;
+  margin-left: 1rem;
+}
+.comment-footer {
+  margin-bottom: 1rem;
+}
+.comment-footer-delete {
+  padding: 0.2rem 0;
+  color: #404040;
+  text-decoration: none;}
+  
+.comment-footer-delete .hover {
+    color: #00BDFC;
+    font: bold;
+  }
+
+.book-appointment-button {
+  border: none;
+  border-radius: 32px;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  width: 150 px;
+  background-color: #ffee93;
 }

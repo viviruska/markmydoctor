@@ -7,7 +7,7 @@ class MedicalSpecialtyPage extends Component {
     doctorsOfSpecialty: [
       {
         "id": 1, 
-        "firstName": "Ágnes",
+        "firstName": "Brigitta",
         "lastName": "Pallagi",
         "averageRating": 4.59,
         "specialty": "dentist",
@@ -31,8 +31,21 @@ class MedicalSpecialtyPage extends Component {
         "specialty": "dentist",
         "city": "Nyíregyháza",
         "avatarURL": ""
+      },
+      {
+        "id": 4, 
+        "firstName": "Mária",
+        "lastName": "Finta",
+        "averageRating": 4.2,
+        "specialty": "dentist",
+        "city": "Szombathely",
+        "avatarURL": ""
       }
     ],
+  }
+
+  capitalizeFirstLetter (string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
   render () {
@@ -40,11 +53,11 @@ class MedicalSpecialtyPage extends Component {
 
     return (
       <div className='list-doctors'>
-        <h1>{spec}</h1>
-        <div className='doctor-list'>
-          <div>Column 1</div>
-          <div>Column 2</div>
-          <div>Column 3</div>
+        <h1 style={{marginLeft: "40px"}}>{this.capitalizeFirstLetter(spec)}s</h1>
+        <div style={{display: "flex", justifyContent:"space-between", width:"100%", marginLeft: "40px"}}>
+          <div>Name</div>
+          <div>Rating Average</div>
+          <div></div>
         </div>
         <ol className='doctor-list'>
         {this.state.doctorsOfSpecialty.map((doctor) => (
